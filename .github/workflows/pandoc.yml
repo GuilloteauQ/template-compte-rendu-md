@@ -1,0 +1,25 @@
+name: Generation PDF
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: create output dir
+        run: mkdir output
+        
+      - uses: docker://pandoc/latex:2.9
+        with:
+          args: --output=output/rapport.pdf rapport.md
+          
+      - uses: actions/upload-artifact@master
+        with:
+          name: output
+          path: output

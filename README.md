@@ -3,7 +3,7 @@ Template pour des comptes rendus de TP en Markdown
 
 ## Utiliser ce template
 
-Pour utiliser ce template, cliquer sur `Use this template`
+Pour utiliser ce template, cliquer sur `Use this template` ou [ici](https://github.com/GuilloteauQ/template-compte-rendu-md/generate)
 
 Plus d'info [ici](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
